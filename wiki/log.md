@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-04-20] schema-update | Git-aware session startup + repo initialised
+- Repo initialised with `git init`; initial commit includes all 33 wiki pages + raw sources.
+- CLAUDE.md startup checklist updated: step 2 now runs `git status` / `git diff --name-only HEAD` first.
+- Benefit: only reads changed files at session start instead of full wiki re-read.
+- `.gitignore` excludes `.obsidian/` and `.claude/`.
+
 ## [2026-04-20] ingest | Anthropic Academy AI Fluency Framework Foundations — lessons 1 & 2
 - Created sources (2): ai-fluency-intro, ai-fluency-why
 - Created concepts (3): ai-fluency, 4d-framework, ai-collaboration-modes

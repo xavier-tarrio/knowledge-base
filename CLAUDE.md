@@ -349,9 +349,15 @@ Example:
 At the start of every session, before doing anything:
 
 1. Read this file (`CLAUDE.md`).
-2. Read `wiki/index.md` to orient yourself — what exists, what's been touched recently.
-3. Read the last 10 entries in `wiki/log.md` to understand recent activity.
-4. Greet the user with a one-line status: *"Wiki has {N} pages across {M} concepts and {K} sources. Last activity: {last log entry title}. What are we working on today?"*
+2. Run `git status` and `git diff --name-only HEAD` to find what changed since the last commit.
+   - **New files in `raw/`** = uningested sources → flag them to the user.
+   - **Modified wiki files** = read only those pages, not everything.
+   - **Clean working tree** = nothing changed; read `wiki/index.md` for full orientation.
+3. Read `wiki/index.md` to orient yourself on what exists.
+4. Read the last 5 entries in `wiki/log.md` for recent activity context.
+5. Greet the user with a one-line status: *"Wiki has {N} pages. Last commit: {git log --oneline -1}. {N} uningested files in raw/ (if any). What are we working on today?"*
+
+**Why git-first:** As the wiki grows, reading all pages at startup is expensive. Git tells you exactly what changed — read the diff, not the world.
 
 ---
 
