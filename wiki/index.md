@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Last updated: 2026-04-20
-> Total pages: 33
+> Total pages: 34
 
 ## Concepts
 | Page | Summary | Sources |
@@ -51,6 +51,11 @@
 | [[sources/claude-101-use-cases]] | Claude 101: Claude in Action — Use Cases by Role | 2026-04-12 |
 | [[sources/ai-fluency-intro]] | AI Fluency Framework Foundations: Introduction to AI Fluency | 2026-04-20 |
 | [[sources/ai-fluency-why]] | AI Fluency Framework Foundations: Why Do We Need AI Fluency? | 2026-04-20 |
+
+## Sessions
+| Page | Topics | Duration |
+|------|--------|----------|
+| [[sessions/2026-04-20]] | AI Fluency ingestion, GitHub MCP setup, git workflow, wiki infrastructure | ~60 min |
 
 ## Outputs
 _No pages yet._

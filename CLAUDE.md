@@ -65,6 +65,21 @@ When the user is satisfied with the agent's judgement, they will update this fil
 
 ## Workflows
 
+### SESSION — opening or closing a daily session
+
+Triggered by: user starts a session ("let's start today's session") or ends one ("wrap up the session").
+
+**On open:** Read the last session page to re-establish context without asking the user to re-explain.
+
+**On close:**
+1. Write or update `wiki/sessions/YYYY-MM-DD.md` with what was covered.
+2. Update `wiki/index.md` Sessions section.
+3. Append to `wiki/log.md`.
+4. Commit with message: `session(YYYY-MM-DD): <topic>`
+5. Push to GitHub.
+
+---
+
 ### INGEST — adding a new source
 
 Triggered by: user drops a file into `raw/` and says "ingest [filename]" or similar.
@@ -262,6 +277,46 @@ tags: [{domain-tag}, {tech-tag}]
 ## Log
 - **{YYYY-MM-DD}:** {Decision made, insight gained, or milestone reached}
 ```
+
+---
+
+### Session page — `wiki/sessions/YYYY-MM-DD.md`
+
+```markdown
+---
+title: "Session: {YYYY-MM-DD}"
+type: session
+date: {YYYY-MM-DD}
+duration: {~N min}
+topics: [{topic1}, {topic2}]
+---
+
+# Session: {YYYY-MM-DD}
+
+## What we worked on
+{1–2 sentence summary of the session focus.}
+
+## Sources ingested
+- [[sources/{slug}]] — {title}
+
+## Concepts created or updated
+- [[concepts/{slug}]] — {new or updated, one-line reason}
+
+## Key insights
+- {The most important thing learned this session}
+- {Second insight}
+
+## Questions raised
+- {Something that came up but wasn't fully answered}
+
+## Infrastructure / meta
+{Any changes to CLAUDE.md, git config, tools, MCP, etc.}
+
+## Next session ideas
+- {Concrete suggestion for what to do next time}
+```
+
+**Session commit convention:** `session(YYYY-MM-DD): <topic>`
 
 ---
 

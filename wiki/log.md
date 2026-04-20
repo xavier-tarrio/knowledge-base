@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-04-20] schema-update | Sessions layer added
+- New page type: wiki/sessions/YYYY-MM-DD.md — daily learning journal
+- SESSION workflow added to CLAUDE.md (open/close protocol)
+- Session page template added to CLAUDE.md page formats
+- Commit convention: session(YYYY-MM-DD): <topic>
+- index.md updated with Sessions section
+
 ## [2026-04-20] schema-update | Git-aware session startup + repo initialised
 - Repo initialised with `git init`; initial commit includes all 33 wiki pages + raw sources.
 - CLAUDE.md startup checklist updated: step 2 now runs `git status` / `git diff --name-only HEAD` first.
