@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-04-20] schema-update | Human-readable architecture header added to CLAUDE.md
+- Added "For humans" section at top of CLAUDE.md: stack table, directory structure, setup guide, session workflow, evolution roadmap
+- Single source of truth: one file for both agent instructions and human replication guide
+- Roadmap phases documented: Learn (active) → Test → Build → Ship
+
 ## [2026-04-20] schema-update | Sessions layer added
 - New page type: wiki/sessions/YYYY-MM-DD.md — daily learning journal
 - SESSION workflow added to CLAUDE.md (open/close protocol)

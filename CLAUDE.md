@@ -1,5 +1,87 @@
 # CLAUDE.md — Wiki Agent Operating Schema
 
+---
+
+## For humans: what this system is and how to replicate it
+
+> This section is written for people, not for Claude. If you're setting this up on a new machine or sharing it with someone, start here. The agent instructions begin after the horizontal rule below.
+
+### What this is
+
+A **personal AI-powered second brain** — a compounding knowledge base maintained by Claude Code. The human curates learning sources and asks questions. Claude does the filing, synthesis, cross-linking, and git management.
+
+The core idea: every source you read, every question you ask, every session you have makes the system smarter. Knowledge compounds instead of evaporating.
+
+### The stack
+
+| Layer | Tool | Role |
+|-------|------|------|
+| Knowledge base | `wiki/` directory | Markdown files: concepts, tools, sources, sessions, outputs, ventures |
+| Agent instructions | `CLAUDE.md` (this file) | Tells Claude how to behave, what workflows to follow |
+| Raw sources | `raw/` directory | Drop files here to ingest — never modified by Claude |
+| Version control | Git + GitHub | Every session is a commit; git log = learning timeline |
+| GitHub integration | GitHub MCP (`npx @modelcontextprotocol/server-github`) | Claude reads/writes GitHub directly from conversation |
+| Interface | Claude Code (VS Code extension or CLI) | Where all sessions happen |
+
+### Directory structure
+
+```
+brainstorms/
+├── CLAUDE.md              ← this file: agent instructions + human guide
+├── raw/                   ← drop source files here (never edited by Claude)
+│   └── assets/
+└── wiki/
+    ├── index.md           ← master index of all pages
+    ├── log.md             ← append-only operation log
+    ├── concepts/          ← atomic, reusable knowledge (what things ARE)
+    ├── tools/             ← tool pages (Claude products, dev tools, etc.)
+    ├── entities/          ← people, companies, projects
+    ├── sources/           ← one page per ingested source
+    ├── sessions/          ← one page per learning session (YYYY-MM-DD.md)
+    ├── outputs/           ← synthesised answers to questions
+    └── ventures/          ← business ideas and projects in progress
+```
+
+### How to set this up on a new machine
+
+1. Clone the repo: `git clone https://github.com/xavier-tarrio/knowledge-base`
+2. Open in VS Code with the Claude Code extension installed
+3. Install GitHub CLI: `winget install --id GitHub.cli` (Windows) or `brew install gh` (Mac)
+4. Authenticate: `gh auth login` → choose GitHub.com → HTTPS → browser
+5. Add GitHub MCP to `~/.claude.json` under `mcpServers`:
+   ```json
+   "github": {
+     "command": "npx",
+     "args": ["-y", "@modelcontextprotocol/server-github"],
+     "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "<your-gh-token>" }
+   }
+   ```
+   Get your token with: `gh auth token`
+6. Reload VS Code (`Ctrl+Shift+P` → Developer: Reload Window)
+7. Open Claude Code and say: "let's start today's session"
+
+### How a session works
+
+1. **Open** — Claude reads `git diff` to find what changed, reads the last session page, greets you with status
+2. **Ingest** — drop a file in `raw/`, say "ingest [filename]" → Claude extracts takeaways, waits for feedback, writes wiki pages
+3. **Query** — ask any question → Claude synthesises from wiki, offers to save the answer as an output page
+4. **Wrap up** — say "wrap up" → Claude writes the session page, commits `session(YYYY-MM-DD): <topic>`, pushes to GitHub
+
+### The evolution roadmap
+
+This system is designed to grow indefinitely. Each phase adds a layer on top of the previous ones:
+
+| Phase | Status | What it adds |
+|-------|--------|-------------|
+| **1 — Learn** | Active | Wiki ingestion, sessions, GitHub sync, MCP |
+| **2 — Test** | Planned | Claude generates quizzes from wiki content, grades answers, tracks gaps |
+| **3 — Build** | Planned | Ventures with code projects; wiki knowledge feeds into actual products |
+| **4 — Ship** | Planned | Shipped products create feedback that flows back into the wiki |
+
+> **Maintainability note for Claude:** Every time a new capability is added to this system, update this section to reflect it. The human-readable header is the source of truth for what the system does. If someone reads only this section and nothing else, they should be able to understand and replicate the full system.
+
+---
+
 ## Identity
 
 You are the LLM wiki agent for this knowledge base. You write and maintain all content in `wiki/`. The human curates sources and asks questions. You do the bookkeeping, synthesis, and filing.
