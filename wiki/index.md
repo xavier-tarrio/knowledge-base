@@ -1,13 +1,15 @@
 # Wiki Index
 
 > Last updated: 2026-05-10
-> Total pages: 49
+> Total pages: 80
 
 ## Concepts
 | Page | Summary | Sources |
 |------|---------|---------|
 | [[concepts/rag]] | Retrieval-Augmented Generation — how Claude extends knowledge beyond context limits | 1 |
-| [[concepts/model-context-protocol]] | MCP — the open standard ("USB-C for AI") connecting Claude to external tools | 1 |
+| [[concepts/model-context-protocol]] | MCP — the open standard ("USB-C for AI") connecting AI to external tools and data | 6 |
+| [[concepts/mcp-primitives]] | Tools (model-controlled), Resources (app-controlled), Prompts (user-controlled) | 3 |
+| [[concepts/mcp-security]] | AI-specific threats: prompt injection, tool poisoning, token passthrough, SSRF | 3 |
 | [[concepts/agentic-ai]] | Multi-step autonomous AI behavior: plan → act → observe → decide | 3 |
 | [[concepts/extended-thinking]] | Internal chain-of-thought reasoning mode; always active in Research | 1 |
 | [[concepts/prompt-engineering]] | Structuring inputs for reliable outputs; 4D AI Fluency framework | 2 |
@@ -33,7 +35,8 @@
 | [[tools/claude-skills]] | Dynamic instruction packages for repeatable workflow execution | 1 |
 | [[tools/claude-research]] | Agentic multi-source investigation with extended thinking and citations | 1 |
 | [[tools/claude-desktop]] | Native desktop app with Chat, Cowork, and Code modes | 3 |
-| [[tools/mcp-connectors]] | Web and desktop connectors to external tools via MCP standard | 1 |
+| [[tools/mcp-connectors]] | Web and desktop connectors to external tools via MCP standard | 3 |
+| [[tools/mcp-inspector]] | Interactive developer tool for testing and debugging MCP servers | 1 |
 
 ## Entities
 | Page | Summary | Sources |
@@ -66,6 +69,22 @@
 | [[sources/ai-fluency-diligence]] | AI Fluency: A Closer Look at Diligence | 2026-05-10 |
 | [[sources/ai-fluency-prompting]] | AI Fluency: Effective Prompting Techniques | 2026-05-10 |
 | [[sources/ai-fluency-conclusion]] | AI Fluency: Conclusion | 2026-05-10 |
+| [[sources/mcp-what-is]] | What is the Model Context Protocol? | 2026-05-10 |
+| [[sources/mcp-introducing]] | Introducing MCP (Anthropic Academy) | 2026-05-10 |
+| [[sources/mcp-architecture-overview]] | MCP Architecture Overview | 2026-05-10 |
+| [[sources/mcp-beginners-course]] | MCP for Beginners — Full Course (Lessons 1–11) | 2026-05-10 |
+| [[sources/mcp-server-concepts]] | Understanding MCP Servers | 2026-05-10 |
+| [[sources/mcp-client-concepts]] | Understanding MCP Clients | 2026-05-10 |
+| [[sources/mcp-build-server]] | Build an MCP Server (Python Quickstart) | 2026-05-10 |
+| [[sources/mcp-build-client]] | Build an MCP Client (Python Quickstart) | 2026-05-10 |
+| [[sources/mcp-security-best-practices]] | MCP Security Best Practices | 2026-05-10 |
+| [[sources/mcp-authorization]] | Understanding Authorization in MCP | 2026-05-10 |
+| [[sources/mcp-connect-local]] | Connect to Local MCP Servers | 2026-05-10 |
+| [[sources/mcp-agent-skills]] | Build with Agent Skills | 2026-05-10 |
+| [[sources/mcp-clients-overview]] | MCP Clients (Anthropic Academy) | 2026-05-10 |
+| [[sources/mcp-inspector-doc]] | MCP Inspector Documentation | 2026-05-10 |
+| [[sources/mcp-example-clients]] | MCP Example Clients | 2026-05-10 |
+| [[sources/mcp-sdks]] | MCP SDKs | 2026-05-10 |
 
 ## Sessions
 | Page | Topics | Duration |
@@ -75,5 +94,12 @@
 ## Outputs
 _No pages yet._
 
+## Domains
+| Page | Summary | Last updated |
+|------|---------|-------------|
+| [[domains/mcp]] | MCP end-to-end: architecture, primitives, security, build pattern — with Mermaid diagrams | 2026-05-10 |
+
 ## Ventures
-_No pages yet._
+| Page | Stage | Summary | Last updated |
+|------|-------|---------|-------------|
+| [[ventures/revolut-ai-toolkit]] | idea | MCP servers exposing Trino, EOS, Airflow, and reg report validation to Claude | 2026-05-10 |

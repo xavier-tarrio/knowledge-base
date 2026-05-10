@@ -209,6 +209,27 @@ Triggered by: user describes a business idea, project plan, or product developme
 
 ---
 
+### DOMAIN — creating or updating a domain page
+
+Triggered by: user asks to build a learning guide, study page, or visual overview for a topic; or when a concept cluster reaches 3+ related concepts and benefits from a narrative synthesis.
+
+A domain page is **not** a concept page. Concepts are atomic definitions. Domain pages are rich narrative learning guides — they tell the story of a topic, show how concepts fit together, and use diagrams throughout.
+
+1. Identify the domain slug (e.g. `mcp`, `ai-fundamentals`, `data-engineering`).
+2. Determine dependency chain: what must the reader know before this domain? Document in frontmatter.
+3. Write the domain page at `wiki/domains/{slug}.md` using the domain page format below.
+4. Update `wiki/index.md` Domains section.
+5. Append to `wiki/log.md`.
+
+**Domain page requirements:**
+- Narrative prose explaining the "why" before the "what"
+- At least one Mermaid diagram per major concept (architecture, flow, dependencies)
+- Real-world analogies to anchor abstract concepts
+- Learning dependency DAG at the end (where this domain fits in the knowledge graph)
+- Links to all relevant concept/tool/source pages
+
+---
+
 ### LINT — health check
 
 Triggered by: user says "lint the wiki" or similar.
@@ -362,6 +383,75 @@ tags: [{domain-tag}, {tech-tag}]
 
 ---
 
+### Domain page — `wiki/domains/{slug}.md`
+
+```markdown
+---
+title: "Domain: {Topic name}"
+type: domain
+created: {YYYY-MM-DD}
+last_updated: {YYYY-MM-DD}
+dependencies: [{prerequisite-concept-1}, {prerequisite-concept-2}]
+---
+
+# Domain: {Topic name}
+
+> **Prerequisites**: [[concepts/{prereq}]] → this domain
+> **What you'll understand after this**: {one sentence payoff}
+
+---
+
+## The Problem / Why This Exists
+{Narrative: what challenge does this solve? Use a concrete story or scenario.}
+
+> **Analogy**: {A real-world analogy that anchors the abstraction}
+
+---
+
+## Architecture / How It Works
+
+```mermaid
+{diagram}
+```
+
+{Prose explanation of the diagram}
+
+---
+
+## {Major Concept 2}
+
+```mermaid
+{diagram}
+```
+
+{Explanation with examples}
+
+---
+
+## How a Request Flows
+
+```mermaid
+sequenceDiagram
+{flow}
+```
+
+---
+
+## Learning Dependency Map
+
+```mermaid
+flowchart LR
+{dependency chain leading to this domain}
+```
+
+---
+
+## Concepts in This Domain
+- [[concepts/{slug}]] — {one-line summary}
+```
+
+---
+
 ### Session page — `wiki/sessions/YYYY-MM-DD.md`
 
 ```markdown
@@ -451,6 +541,10 @@ query: "{The original question asked}"
 ## Outputs
 | Page | Query | Date |
 |------|-------|------|
+
+## Domains
+| Page | Summary | Last updated |
+|------|---------|-------------|
 
 ## Ventures
 | Page | Stage | Summary | Last updated |

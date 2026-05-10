@@ -42,3 +42,5 @@ Connectors give Claude access to external tools and data sources through the Mod
 
 ## Sources
 - [[sources/claude-101-connecting-tools]] — connector directory walkthrough, setup steps, practical use cases, security considerations
+- [[sources/mcp-what-is]] — MCP protocol definition and ecosystem overview
+- [[sources/mcp-connect-local]] — step-by-step: connecting local MCP servers to Claude Desktop

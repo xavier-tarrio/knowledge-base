@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-10] ingest | Model Context Protocol — complete documentation set (16 sources)
+- Created sources (16): mcp-what-is, mcp-introducing, mcp-architecture-overview, mcp-beginners-course, mcp-server-concepts, mcp-client-concepts, mcp-build-server, mcp-build-client, mcp-security-best-practices, mcp-authorization, mcp-connect-local, mcp-agent-skills, mcp-clients-overview, mcp-inspector-doc, mcp-example-clients, mcp-sdks
+- Created concepts (3): mcp-primitives, mcp-security + major expansion of model-context-protocol
+- Created tools (1): mcp-inspector
+- Created domains (1): domains/mcp (narrative + Mermaid diagrams)
+- Created ventures (1): revolut-ai-toolkit (idea stage — 5 MCP server concepts for Revolut stack)
+- Total pages: 49 → 80
+
 ## [2026-05-10] ingest | AI Fluency Framework Foundations — complete course (9 lessons)
 - Created sources (9): ai-fluency-generative-ai, ai-fluency-4d-framework-lesson, ai-fluency-capabilities-limitations, ai-fluency-delegation, ai-fluency-description, ai-fluency-discernment, ai-fluency-diligence, ai-fluency-prompting, ai-fluency-conclusion
 - Created concepts (6): generative-ai, delegation-competency, description-competency, discernment-competency, diligence-competency, prompting-techniques
