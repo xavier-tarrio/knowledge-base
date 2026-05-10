@@ -90,6 +90,7 @@
 | Page | Topics | Duration |
 |------|--------|----------|
 | [[sessions/2026-04-20]] | AI Fluency ingestion, GitHub MCP setup, git workflow, wiki infrastructure | ~60 min |
+| [[sessions/2026-05-10]] | MCP deep-dive, domains layer, ventures layer, Revolut AI toolkit ideas | ~120 min |
 
 ## Outputs
 _No pages yet._
