@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-10] ingest | AI Fluency Framework Foundations — complete course (9 lessons)
+- Created sources (9): ai-fluency-generative-ai, ai-fluency-4d-framework-lesson, ai-fluency-capabilities-limitations, ai-fluency-delegation, ai-fluency-description, ai-fluency-discernment, ai-fluency-diligence, ai-fluency-prompting, ai-fluency-conclusion
+- Created concepts (6): generative-ai, delegation-competency, description-competency, discernment-competency, diligence-competency, prompting-techniques
+- Updated concepts (2): 4d-framework (sources expanded), prompt-engineering (sources expanded)
+- All concept pages grounded in Revolut/data engineering context (Trino SQL, EOS YAML, reg reporting)
+- Total pages: 34 → 49
+
 ## [2026-04-20] schema-update | Human-readable architecture header added to CLAUDE.md
 - Added "For humans" section at top of CLAUDE.md: stack table, directory structure, setup guide, session workflow, evolution roadmap
 - Single source of truth: one file for both agent instructions and human replication guide

@@ -1,7 +1,7 @@
 # Wiki Index
 
-> Last updated: 2026-04-20
-> Total pages: 34
+> Last updated: 2026-05-10
+> Total pages: 49
 
 ## Concepts
 | Page | Summary | Sources |
@@ -17,6 +17,12 @@
 | [[concepts/ai-fluency]] | Meta-framework for human-AI collaboration: effective, efficient, ethical, safe | 2 |
 | [[concepts/4d-framework]] | Delegation, Description, Discernment, Diligence — the four competencies of AI Fluency | 2 |
 | [[concepts/ai-collaboration-modes]] | Three tiers of AI engagement: Automation, Augmentation, Agency | 1 |
+| [[concepts/generative-ai]] | How LLMs work: transformer architecture, pre-training, fine-tuning, hallucinations | 2 |
+| [[concepts/delegation-competency]] | Problem Awareness + Platform Awareness + Task Delegation | 2 |
+| [[concepts/description-competency]] | Product + Process + Performance Description; the Description↔Discernment loop | 3 |
+| [[concepts/discernment-competency]] | Product + Process + Performance Discernment; domain expertise amplifies evaluation | 2 |
+| [[concepts/diligence-competency]] | Creation + Transparency + Deployment Diligence; accountability in regulated contexts | 2 |
+| [[concepts/prompting-techniques]] | Six foundational techniques: context, examples, constraints, steps, think-first, role | 2 |
 
 ## Tools
 | Page | Summary | Sources |
@@ -51,6 +57,15 @@
 | [[sources/claude-101-use-cases]] | Claude 101: Claude in Action — Use Cases by Role | 2026-04-12 |
 | [[sources/ai-fluency-intro]] | AI Fluency Framework Foundations: Introduction to AI Fluency | 2026-04-20 |
 | [[sources/ai-fluency-why]] | AI Fluency Framework Foundations: Why Do We Need AI Fluency? | 2026-04-20 |
+| [[sources/ai-fluency-generative-ai]] | AI Fluency: Generative AI Fundamentals | 2026-05-10 |
+| [[sources/ai-fluency-4d-framework-lesson]] | AI Fluency: The 4D Framework | 2026-05-10 |
+| [[sources/ai-fluency-capabilities-limitations]] | AI Fluency: Capabilities & Limitations | 2026-05-10 |
+| [[sources/ai-fluency-delegation]] | AI Fluency: A Closer Look at Delegation | 2026-05-10 |
+| [[sources/ai-fluency-description]] | AI Fluency: A Closer Look at Description | 2026-05-10 |
+| [[sources/ai-fluency-discernment]] | AI Fluency: A Closer Look at Discernment | 2026-05-10 |
+| [[sources/ai-fluency-diligence]] | AI Fluency: A Closer Look at Diligence | 2026-05-10 |
+| [[sources/ai-fluency-prompting]] | AI Fluency: Effective Prompting Techniques | 2026-05-10 |
+| [[sources/ai-fluency-conclusion]] | AI Fluency: Conclusion | 2026-05-10 |
 
 ## Sessions
 | Page | Topics | Duration |

@@ -1,8 +1,8 @@
 ---
 title: 4D Framework (AI Fluency)
 type: concept
-sources: [ai-fluency-intro, ai-fluency-why]
-last_updated: 2026-04-20
+sources: [ai-fluency-intro, ai-fluency-why, ai-fluency-4d-framework-lesson, ai-fluency-delegation, ai-fluency-description, ai-fluency-discernment, ai-fluency-diligence]
+last_updated: 2026-05-10
 ---
 
 # 4D Framework (AI Fluency)

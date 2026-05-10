@@ -1,8 +1,8 @@
 ---
 title: Prompt Engineering
 type: concept
-sources: [claude-101-first-conversation, claude-101-better-results, ai-fluency-intro]
-last_updated: 2026-04-20
+sources: [claude-101-first-conversation, claude-101-better-results, ai-fluency-intro, ai-fluency-prompting, ai-fluency-description]
+last_updated: 2026-05-10
 ---
 
 # Prompt Engineering
